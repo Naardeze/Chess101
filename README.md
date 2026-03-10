@@ -1,2 +1,2 @@
 # Chess101
-Chess FEN orientated Framework
+Chess Framework (FEN)
