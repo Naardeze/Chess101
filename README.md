@@ -3,8 +3,21 @@ Chess Framework (FEN)
 
 All classes needed in a FEN string orientated chess game.
 
-The State class constructor (private) contains all 6 elements of a FEN string. Those are used to get all possible destinations (index), not moves, per piece (index) and if it is check.
+enums:
+  -Index -> a1-h8
+  -Piece -> K-p
+  -Side -> w, b
+  -Step -> all directions
 
-With this all moves can be made or conclude mate.
+moves:
+  -Move -> from, to
+  -Promotion -> Move + piece
 
-toString returns the FEN of this state.
+fen:
+  -State -> fen, moves, check
+
+The State class constructor (private) contains all 6 elements of a FEN string. Those are used to get per piece (index) all possible destinations (index) (no moves), and if it is check.
+
+With this all moves can be made or mate type. A move results in a new State
+
+toString() returns the FEN string.
